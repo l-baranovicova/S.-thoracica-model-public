@@ -21,7 +21,8 @@ evolution_matrix = zeros(generations,4); %keeps track of slope, switch point, me
 for gen = 1:generations-1
     
     %melanism and size generation in whole population, VECTORISED
-    pop=logistic2(pop, resources);
+    %SADLY not working yet, have to use old function
+    %pop=logistic2(pop, resources);
 
     %TRAIT EVALUATION
     for i = 1:max_pop %for each individual
